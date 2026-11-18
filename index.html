@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff8f0">
+  <title>Una sorpresa para ti ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sparkles" aria-hidden="true"></div>
+  <main>
+    <section class="screen envelope-screen active" id="envelopeScreen">
+      <div class="intro-decoration">✿　♡　✿</div>
+      <p class="eyebrow">UN PEQUEÑO DETALLE PARA ALGUIEN ESPECIAL</p>
+      <h1 class="intro-title">Te tengo una<br><span>sorpresa...</span></h1>
+      <button class="envelope-button" id="openEnvelope" aria-label="Abrir la carta">
+        <span class="envelope-back"></span>
+        <span class="letter-peek">Con mucho amor ♡</span>
+        <span class="envelope-front"></span>
+        <span class="envelope-flap"></span>
+        <span class="wax-seal">♥</span>
+      </button>
+      <p class="tap-hint">Toca el sobre para descubrirla</p>
+      <div class="bottom-flower">❀　✧　❀</div>
+    </section>
+
+    <section class="screen birthday-screen" id="birthdayScreen">
+      <div class="confetti" aria-hidden="true"></div>
+      <div class="top-garland">✿　✧　♡　✧　✿</div>
+      <p class="eyebrow">HOY ES UN DÍA MUY ESPECIAL</p>
+      <h2 class="birthday-title"><span>Feliz</span><br>Cumpleaños</h2>
+      <p class="for-name">Mi querida Maria del Carmen</p>
+      <div class="cake-area">
+        <div class="cake-plate"></div>
+        <div class="cake cake-top">
+          <div class="icing icing-top"></div>
+          <div class="sprinkles">✦　·　✧　·　✦</div>
+        </div>
+        <div class="cake cake-middle"><div class="icing icing-middle"></div></div>
+        <div class="cake cake-bottom"><div class="icing icing-bottom"></div></div>
+        <div class="candles" id="candles">
+          <button class="candle" aria-label="Apagar vela 1"><span class="flame"></span><span class="wick"></span></button>
+          <button class="candle" aria-label="Apagar vela 2"><span class="flame"></span><span class="wick"></span></button>
+          <button class="candle" aria-label="Apagar vela 3"><span class="flame"></span><span class="wick"></span></button>
+          <button class="candle" aria-label="Apagar vela 4"><span class="flame"></span><span class="wick"></span></button>
+          <button class="candle" aria-label="Apagar vela 5"><span class="flame"></span><span class="wick"></span></button>
+        </div>
+      </div>
+      <p class="cake-instruction" id="cakeInstruction">Pide un deseo y toca las velitas para apagarlas ✨</p>
+      <button class="primary-button hidden" id="toLetter">Abrir mi carta ♡</button>
+      <p class="small-note">Cada velita guarda un deseo bonito para ti</p>
+    </section>
+
+    <section class="screen letter-screen" id="letterScreen">
+      <div class="letter-paper">
+        <div class="letter-top">✿　♡　✿</div>
+        <p class="eyebrow">PARA LA PERSONA MÁS ESPECIAL</p>
+        <h2 class="letter-title">Mi amor...</h2>
+        <div class="letter-content">
+          <p>Hoy es un día muy especial, porque celebramos la llegada al mundo de una personita que hace mis días mucho más bonitos.</p>
+          <p>Quiero que sepas lo importante que eres para mí. Gracias por cada sonrisa, cada conversación, cada abrazo y por todos esos pequeños momentos que, aunque parezcan simples, guardo con muchísimo cariño.</p>
+          <p>Deseo que este nuevo año de vida te regale muchísimas razones para sonreír, sueños cumplidos, tranquilidad y momentos preciosos. Nunca dejes de brillar ni de ser esa personita tan maravillosa que eres.</p>
+          <p>Ojalá pueda seguir acompañándote en muchos cumpleaños más, creando recuerdos, superando dificultades y construyendo juntos todo aquello que soñamos.</p>
+          <p class="letter-emphasis">Te mereces todo lo bonito de este mundo. Hoy y siempre quiero verte feliz.</p>
+          <p class="signature">Con todo mi amor,<br><span>tu Joss ♡</span></p>
+        </div>
+        <div class="letter-flowers">🌷　🌼　🌷</div>
+      </div>
+      <div class="gift-section">
+        <p class="eyebrow">Y TODAVÍA HAY ALGO MÁS...</p>
+        <h2 class="gift-title">Unos regalitos para ti</h2>
+        <p class="gift-subtitle">Toca cada regalo para descubrirlo ♡</p>
+        <div class="gifts">
+          <button class="gift" data-message="Mi primer regalo es un montón de besitos para ti. ¡Muchísimos! 😘💚"><span>🎁</span><small>Regalo 1</small></button>
+          <button class="gift" data-message="Mi segundo regalo es una promesa: seguir creando recuerdos hermosos a tu lado. 🌷"><span>🎀</span><small>Regalo 2</small></button>
+          <button class="gift" data-message="Y mi último regalo es todo mi amor, hoy, mañana y cada día que me permitas compartir contigo. ❤️"><span>💝</span><small>Regalo 3</small></button>
+        </div>
+        <div class="gift-message" id="giftMessage" aria-live="polite">Aquí aparecerá tu sorpresa...</div>
+        <button class="primary-button replay-button" id="replay">Volver a vivir la sorpresa ↻</button>
+      </div>
+    </section>
+  </main>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
